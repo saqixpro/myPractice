@@ -1,0 +1,51 @@
+{
+  "expo": {
+    "name": "Snacktime",
+    "slug": "Snacacktime",
+    "privacy": "unlisted",
+    "owner": "adunsker",
+    "version": "1.0.3",
+    "orientation": "portrait",
+    "icon": "./assets/SnacktimeIcon3.png",
+    "userInterfaceStyle": "light",
+    "scheme": "snacktime",
+    "plugins": [
+      "expo-apple-authentication",
+      [
+        "expo-updates",
+        {
+          "username": "adunsker"
+        }
+      ]
+    ],
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.snacktimerecordings.snacktimemobileios",
+      "usesAppleSignIn": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "package": "com.snacktimerecordings.snacktimeandroid",
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "3526a0f5-a1f1-46d2-a10d-55c2ae7de779"
+      }
+    }
+  }
+}
